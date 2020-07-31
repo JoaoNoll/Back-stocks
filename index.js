@@ -127,7 +127,7 @@ server.delete('/stocks/:id', async (req, res) => {
         }).catch(err => {
             return res.json(err);
         })
-    if (!deletar) {
+    if (deletar) {
         return res.json({
             result: 'Produto deletado com sucesso'
         });
