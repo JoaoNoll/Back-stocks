@@ -1,8 +1,8 @@
-const Sequelize = require('sequelize');
+const SequelizeImport = require('sequelize');
 
 require('dotenv').config();
 
-const sequelize = new Sequelize(process.env.DATABASE_URL, {
+const sequelize = new SequelizeImport(process.env.DATABASE_URL, {
     dialect: 'postgres',
     dialectOptions: {
         ssl: {
